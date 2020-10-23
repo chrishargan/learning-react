@@ -5,17 +5,17 @@ import Person from './Person/Person';
 class App extends Component {
     state = {
         persons: [
-            { id: 'asfa1', name: 'Max', age: 28 },
-            { id: 'vasdf1', name: 'Manu', age: 29 },
-            { id: 'asdf11', name: 'Stephanie', age: 26 }
+            { id: 'asfa1', name: 'Chris', age: 28 },
+            { id: 'vasdf1', name: 'Max', age: 29 },
+            { id: 'asdf11', name: 'Kevin', age: 26 }
         ],
         otherState: 'some other value',
         showPersons: false
     }
 
     nameChangedHandler = ( event, id ) => {
-        const personIndex = this.state.persons.findIndex(p => {
-            return p.id === id;
+        const personIndex = this.state.persons.findIndex(who => {
+            return who.id === id;
         });
 
         const person = {
@@ -84,14 +84,6 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
-
-
-
-
 
 
 
